@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "isbn": "9780743273565",
+  "publisher": "Scribner",
+  "publishedDate": "1925-04-10",
+  "description": "A novel about the American dream and the roaring twenties.",
+  "category": "Fiction",
+  "rating": 4.7,
+  "coverImageUrl": "https://example.com/images/great-gatsby.jpg",
+  "pageCount": 180
+}
