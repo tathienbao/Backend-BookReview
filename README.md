@@ -36,3 +36,5 @@ localhost:8080
 get secrets from google drive and put them on this path as it is
 backend/src/main/resources/application.properties
 ```
+Delete soon:
+https://docs.google.com/document/d/1etwpTNFNgPUxStUjCu2acNNpMdUIY3wmANcV2q0UEHU/edit?usp=sharing
