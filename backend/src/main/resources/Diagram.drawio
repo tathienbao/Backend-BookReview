@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.10">
   <diagram name="Trang-1" id="ISWLFxNix_QhMm1Ln9Wf">
-    <mxGraphModel dx="1434" dy="738" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="819" dy="422" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,7 +59,7 @@
           <mxGeometry x="6" y="28" width="284" height="104" as="geometry" />
         </mxCell>
         <mxCell id="qbdxgkpknPRAaBmmYYdj-17" value="Reviews" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="325.5" y="855" width="209" height="139" as="geometry" />
+          <mxGeometry x="347" y="807" width="209" height="139" as="geometry" />
         </mxCell>
         <mxCell id="qbdxgkpknPRAaBmmYYdj-22" value="&lt;li&gt;&lt;b&gt;&lt;u&gt;&lt;code&gt;id&lt;/code&gt;: Integer (PK)&lt;/u&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;content&lt;/code&gt;: Text&lt;/li&gt;&lt;li&gt;&lt;code&gt;rating&lt;/code&gt;: Integer (1 to 5 stars)&lt;/li&gt;&lt;li&gt;&lt;code&gt;created_at&lt;/code&gt;: Timestamp&lt;/li&gt;&lt;li&gt;&lt;code style=&quot;background-color: initial;&quot;&gt;user_id&lt;/code&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: References User (FK)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;code style=&quot;background-color: initial;&quot;&gt;book_id&lt;/code&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: References Book (FK)&lt;/span&gt;&lt;/li&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qbdxgkpknPRAaBmmYYdj-17">
           <mxGeometry x="8" y="31" width="202" height="104" as="geometry" />
@@ -70,12 +70,12 @@
             <mxPoint x="585" y="746" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qbdxgkpknPRAaBmmYYdj-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERone;startFill=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="qbdxgkpknPRAaBmmYYdj-10">
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERone;startFill=0;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325.5" y="978" as="targetPoint" />
-            <mxPoint x="217" y="790" as="sourcePoint" />
+            <mxPoint x="347" y="929" as="targetPoint" />
+            <mxPoint x="239" y="775" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="217" y="978" />
+              <mxPoint x="238.5" y="929" />
             </Array>
           </mxGeometry>
         </mxCell>
