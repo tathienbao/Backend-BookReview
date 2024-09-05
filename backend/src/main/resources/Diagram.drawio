@@ -47,7 +47,40 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rKEjl-j82sjy5_hP4zZS-41" value="Data Model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="74" y="527" width="79" height="26" as="geometry" />
+          <mxGeometry x="78" y="516" width="79" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-10" value="Books" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="166" y="567" width="205" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-16" value="Users" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="456" y="569" width="275" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-20" value="&lt;li&gt;&lt;b&gt;&lt;u&gt;&lt;code&gt;id&lt;/code&gt;: Integer (PK)&lt;/u&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;username&lt;/code&gt;: String&lt;/li&gt;&lt;li&gt;&lt;code&gt;email&lt;/code&gt;: String&lt;/li&gt;&lt;li&gt;&lt;code&gt;password&lt;/code&gt;: String (hashed)&lt;/li&gt;&lt;li&gt;&lt;code&gt;role&lt;/code&gt;: Enum (ADMIN, LIBRARIAN, REVIEWER)&lt;/li&gt;&lt;li&gt;&lt;code&gt;created_at&lt;/code&gt;: Timestamp&lt;/li&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qbdxgkpknPRAaBmmYYdj-16">
+          <mxGeometry x="6" y="28" width="284" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-17" value="Reviews" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="325.5" y="855" width="209" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-22" value="&lt;li&gt;&lt;b&gt;&lt;u&gt;&lt;code&gt;id&lt;/code&gt;: Integer (PK)&lt;/u&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;content&lt;/code&gt;: Text&lt;/li&gt;&lt;li&gt;&lt;code&gt;rating&lt;/code&gt;: Integer (1 to 5 stars)&lt;/li&gt;&lt;li&gt;&lt;code&gt;created_at&lt;/code&gt;: Timestamp&lt;/li&gt;&lt;li&gt;&lt;code style=&quot;background-color: initial;&quot;&gt;user_id&lt;/code&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: References User (FK)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;code style=&quot;background-color: initial;&quot;&gt;book_id&lt;/code&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: References Book (FK)&lt;/span&gt;&lt;/li&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="qbdxgkpknPRAaBmmYYdj-17">
+          <mxGeometry x="8" y="31" width="202" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-24" value="" style="endArrow=ERone;startArrow=ERzeroToMany;html=1;rounded=0;exitX=1.002;exitY=0.712;exitDx=0;exitDy=0;exitPerimeter=0;startFill=0;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="qbdxgkpknPRAaBmmYYdj-22" target="qbdxgkpknPRAaBmmYYdj-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="387" y="905" as="sourcePoint" />
+            <mxPoint x="585" y="746" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERone;startFill=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qbdxgkpknPRAaBmmYYdj-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325.5" y="978" as="targetPoint" />
+            <mxPoint x="217" y="790" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="217" y="978" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbdxgkpknPRAaBmmYYdj-19" value="&lt;li&gt;&lt;u&gt;&lt;b&gt;&lt;code&gt;id&lt;/code&gt;: Integer (PK)&lt;/b&gt;&lt;/u&gt;&lt;/li&gt;&lt;li&gt;&lt;code style=&quot;background-color: initial;&quot;&gt;title&lt;/code&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: String&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;code&gt;author&lt;/code&gt;: String&lt;/li&gt;&lt;li&gt;&lt;code&gt;isbn&lt;/code&gt;: String&lt;/li&gt;&lt;li&gt;&lt;code&gt;publisher&lt;/code&gt;: String&lt;/li&gt;&lt;li&gt;&lt;code&gt;published_date&lt;/code&gt;: Date&lt;/li&gt;&lt;li&gt;&lt;code&gt;description&lt;/code&gt;: Text&lt;/li&gt;&lt;li&gt;&lt;code&gt;category&lt;/code&gt;: String&lt;/li&gt;&lt;li&gt;&lt;code&gt;rating&lt;/code&gt;: Interger&lt;/li&gt;&lt;li&gt;&lt;code&gt;page_count&lt;/code&gt;: Integer&lt;/li&gt;&lt;li&gt;&lt;code&gt;created_at&lt;/code&gt;: Timestamp&lt;/li&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="182" y="592" width="157" height="181" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
