@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.paf.bookreview.backend.dto.ReviewDTO;
 import com.paf.bookreview.backend.model.Book;
 import com.paf.bookreview.backend.model.Review;
 import com.paf.bookreview.backend.service.BookService;
@@ -28,13 +29,13 @@ public class ReviewController {
     private BookService bookService;
 
     @GetMapping
-    public ResponseEntity<List<Review>> getAllReviews() {
-        List<Review> reviews = reviewService.getAllReviews();
+    public ResponseEntity<List<ReviewDTO>> getAllReviews() {
+        List<ReviewDTO> reviews = reviewService.getAllReviews();
         return ResponseEntity.ok(reviews);
     }
 
     @GetMapping("/book/{bookId}")
-    public ResponseEntity<List<Review>> getReviewsForBook(@PathVariable Long bookId) {
+    public ResponseEntity<List<ReviewDTO>> getReviewsForBook(@PathVariable Long bookId) {
         Optional<Book> book = bookService.getBookById(bookId);
         if (book.isPresent()) {
             return ResponseEntity.ok(reviewService.getReviewsForBook(book.get()));
